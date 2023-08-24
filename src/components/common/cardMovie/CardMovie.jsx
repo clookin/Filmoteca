@@ -7,10 +7,10 @@ import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import StarIcon from '@mui/icons-material/Star';
 import { IconButton } from '@mui/material';
-import { yellow } from '@mui/material/colors';
 
 
-const CardMovie = ({movie}) => {
+
+const CardMovie = ({movie, handleRecom}) => {
   return (
     <Card sx={{ width: 300, height: 500}}>
     <CardHeader
@@ -40,8 +40,8 @@ const CardMovie = ({movie}) => {
       </Typography>
     </CardContent>
     <CardActions disableSpacing>
-      <IconButton aria-label="add to recomended">
-        <StarIcon color={movie.isRecommended ? 'primary' : 'disabled' }
+      <IconButton aria-label="add to recomended" onClick={()=>handleRecom(movie)}>
+        <StarIcon color={movie.isRecommended ? 'primary' : 'disabled'} 
         />
       </IconButton>
     </CardActions>

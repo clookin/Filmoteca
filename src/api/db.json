@@ -1,28 +1,28 @@
 {
-    "movies":[
-      {
-        "id": 1,
-        "name":"Cars",
-        "description":"De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo largo de la histórica Ruta 66",
-        "img":"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2F8D58B5DF6215D6E0352AA210AC046732486F56D39EC7CBC20CC838DEB6EDC0/scale?width=1200&aspectRatio=1.78&format=jpeg",
-        "createdAt":"22 de junio de 2006",
-        "isRecommended": true
-      },
-      {
-        "id": 2,
-        "name":"Your name",
-        "description":"Mitsuha es una adolescente que detesta su vida rural en el campo. Por otro lado, Taki es un chico que vive en Tokio y sueña con ser un artista o un arquitecto. Los destinos de estos jóvenes se entrelazan la noche en que dos estrellas caen del cielo, y comienzan a intercambiar sus cuerpos de la noche a la mañana. Con el pasar del tiempo, desarrollan maneras de comunicarse entre ellos y un creciente anhelo de conocerse en persona.",
-        "img":"https://es.web.img2.acsta.net/pictures/17/02/08/13/45/536055.jpg",
-        "createdAt":"26 de agosto de 2016",
-        "isRecommended": true
-      },
-      {
-        "id": 3,
-        "name":"About time",
-        "description":"Cuando Tim Lake cumple 21 años, su padre le dice un secreto: los hombres de su familia pueden viajar por el tiempo. A pesar de que él no puede cambiar la historia, Tim decide mejorar su vida buscando una novia. Él conoce a Mary, se enamora y finalmente se gana su corazón con los viajes en el tiempo y un poco de astucia. Sin embargo, mientras su inusual vida progresa, Tim descubre que su habilidad especial no puede protegerlos de los problemas diarios de la vida.",
-        "img":"https://m.media-amazon.com/images/I/81zH9jLhDZL._AC_UF894,1000_QL80_.jpg",
-        "createdAt":"8 de agosto de 2013",
-        "isRecommended": true
-      }
+  "movies": [
+    {
+      "id": 1,
+      "name": "Cars",
+      "description": "De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo largo de la histórica Ruta 66",
+      "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2F8D58B5DF6215D6E0352AA210AC046732486F56D39EC7CBC20CC838DEB6EDC0/scale?width=1200&aspectRatio=1.78&format=jpeg",
+      "createdAt": "22 de junio de 2006",
+      "isRecommended": false
+    },
+    {
+      "id": 2,
+      "name": "Your name",
+      "description": "Mitsuha es una adolescente que detesta su vida rural en el campo. Por otro lado, Taki es un chico que vive en Tokio y sueña con ser un artista o un arquitecto. Los destinos de estos jóvenes se entrelazan la noche en que dos estrellas caen del cielo, y comienzan a intercambiar sus cuerpos de la noche a la mañana. Con el pasar del tiempo, desarrollan maneras de comunicarse entre ellos y un creciente anhelo de conocerse en persona.",
+      "img": "https://es.web.img2.acsta.net/pictures/17/02/08/13/45/536055.jpg",
+      "createdAt": "26 de agosto de 2016",
+      "isRecommended": true
+    },
+    {
+      "id": 3,
+      "name": "About time",
+      "description": "Cuando Tim Lake cumple 21 años, su padre le dice un secreto: los hombres de su familia pueden viajar por el tiempo. A pesar de que él no puede cambiar la historia, Tim decide mejorar su vida buscando una novia. Él conoce a Mary, se enamora y finalmente se gana su corazón con los viajes en el tiempo y un poco de astucia. Sin embargo, mientras su inusual vida progresa, Tim descubre que su habilidad especial no puede protegerlos de los problemas diarios de la vida.",
+      "img": "https://m.media-amazon.com/images/I/81zH9jLhDZL._AC_UF894,1000_QL80_.jpg",
+      "createdAt": "8 de agosto de 2013",
+      "isRecommended": true
+    }
   ]
 }
