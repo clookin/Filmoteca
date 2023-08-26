@@ -10,6 +10,7 @@ const Home = () => {
   const [dispatchRecom, setDispatchRecom] = useState(false)
   const [recommended, setRecommended] = useState(false)
   const [open, setOpen] = useState(false);
+  const [movieCreate, setMovieCreate] = useState(false)
 
 
   const handleOpen = () => setOpen(true);
@@ -21,7 +22,8 @@ const Home = () => {
       .catch(error => console.log(error))
 
       setDispatchRecom(false) 
-  }, [dispatchRecom, ]);
+      setMovieCreate(false)
+  }, [dispatchRecom, movieCreate]);
 
   const handleRecom = (movie) => {
     axios.patch(`http://localHost:5000/movies/${movie.id}`, {isRecommended: !movie.isRecommended})
@@ -34,8 +36,8 @@ const Home = () => {
   return (
     <>
       <Header setRecommended={setRecommended}/>
-      <Button onClick={handleOpen}>Open modal</Button>
-      <CardMovieModal open={open} handleClose={handleClose}/>
+      <Button onClick={handleOpen}>Agregar pelicula</Button>
+      <CardMovieModal open={open} handleClose={handleClose} setMovieCreate={setMovieCreate}/>
       <div className='mainContainer'>
         {
           !recommended ? (

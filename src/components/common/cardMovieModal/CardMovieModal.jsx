@@ -1,5 +1,7 @@
 import { Box, Button, Modal, TextField, Typography } from '@mui/material'
 import React from 'react'
+import { useFormik } from 'formik';
+import axios from 'axios';
 
 
 const style = {
@@ -16,7 +18,36 @@ const style = {
   
 };
 
-const CardMovieModal = ({open,handleClose}) => {
+const CardMovieModal = ({open,handleClose,setMovieCreate}) => {
+  
+  let initialValues = {
+    name: "",
+    description:"",
+    createdAt:"",
+    img:""
+  }
+
+  const onSubmit = (data) => {
+    
+    let arg = {
+      name:"data.name",
+      description:'data.description',
+      createdAt:"data.createdAt",
+      img:'data.img',
+      isRecommended: false
+    }
+
+    axios.post("http://localHost:5000/movies", arg)
+      .then( res => {handleClose(), setMovieCreate(true)})
+      .catch(error => console.log(error))
+  }
+
+const { handleChange, handleSubmit } = useFormik({
+  initialValues,
+  // validationSchema,
+  onSubmit
+})
+
   return (
     <div>
       
@@ -33,13 +64,15 @@ const CardMovieModal = ({open,handleClose}) => {
           justifyContent:'space-evenly',
           alignItems:'center',
           height:'400px'
-        }}>
+        }}
+        onSubmit={handleSubmit}
+        >
           <Typography variant='h6' color="primary" > Agregar pelicula</Typography>
-          <TextField id="name" label="Nombre de la pelicula" variant="outlined" fullWidth/>
-          <TextField id="recomm" label="Reseña" variant="outlined" fullWidth/>
-          <TextField id="img" label="Link imagen de la pelicula" variant="outlined" fullWidth/>
-          <TextField id="createdAt" label="Fecha de estreno" variant="outlined" fullWidth/>
-          <Button variant='outlined'> Agregar </Button>
+          <TextField id="name" label="Nombre de la pelicula" variant="outlined" fullWidth name="name" onChange={handleChange}/>
+          <TextField id="recomm" label="Reseña" variant="outlined" fullWidth name="description" onChange={handleChange}/>
+          <TextField id="img" label="Link imagen de la pelicula" variant="outlined" fullWidth name="img" onChange={handleChange}/>
+          <TextField id="createdAt" label="Fecha de estreno" variant="outlined" fullWidth name="createdAt" onChange={handleChange}/>
+          <Button variant='outlined' type='submit' > Agregar </Button>
         </form>
       </Box>
     </Modal>
