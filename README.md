@@ -1,8 +1,19 @@
-# React + Vite
+Aplicación de Reseñas de Películas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una aplicación web de Reseñas de Películas donde los usuarios pueden agregar y eliminar sus propias reseñas de películas. La aplicación está construida utilizando React, Vite, Formik, Material-UI y utiliza un servidor JSON ficticio como backend para almacenar y gestionar los datos de las reseñas de películas.
 
-Currently, two official plugins are available:
+Características:
+-Agregar una nueva reseña de película, incluyendo título de la película, texto de la reseña y si se recomienda.
+-Eliminar tus propias reseñas de películas.
+-Ver una lista de reseñas de películas existentes con sus títulos, fragmentos de reseñas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-------------------------
+
+Movie Reviews Application
+This is a web application for Movie Reviews where users can add and delete their own movie reviews. The application is built using React, Vite, Formik, Material-UI, and utilizes a fictional JSON server as a backend to store and manage movie review data.
+
+Features:
+
+-Add a new movie review, including movie title, review text, and whether it's recommended.
+-Delete your own movie reviews.
+-View a list of existing movie reviews with their titles and review excerpts.
