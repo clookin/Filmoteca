@@ -10,7 +10,7 @@ const Header = ({setRecommended}) => {
       padding: '10px',
       alignItems: 'center',
     }}  >
-      <Typography variant='h4' color="primary">Peliculas</Typography>
+      <Typography sx={{marginRight:'auto'}}variant='h4' color="primary">Peliculas</Typography>
       <div style={{display:"flex", justifyContent:"center", gap:"10px", marginLeft:"50%"}}>
         <Button variant='contained' color='primary'onClick={()=> setRecommended(false)}>Todas</Button>
         <Button variant='contained' color='primary' onClick={()=> setRecommended(true)}>Recomendadas</Button>

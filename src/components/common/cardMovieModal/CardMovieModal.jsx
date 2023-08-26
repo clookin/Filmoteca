@@ -51,7 +51,7 @@ const { handleChange, handleSubmit } = useFormik({
   return (
     <div>
       
-    <Modal
+    <Modal 
       open={open}
       onClose={handleClose}
       aria-labelledby="modal-modal-title"

@@ -6,11 +6,12 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import StarIcon from '@mui/icons-material/Star';
-import { IconButton } from '@mui/material';
+import { Button, IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 
 
 
-const CardMovie = ({movie, handleRecom}) => {
+const CardMovie = ({movie, handleRecom, deleteMovie}) => {
   return (
     <Card sx={{ width: 300, height: 500}}>
     <CardHeader
@@ -39,10 +40,13 @@ const CardMovie = ({movie, handleRecom}) => {
         {movie.description}
       </Typography>
     </CardContent>
-    <CardActions disableSpacing>
+    <CardActions disableSpacing sx={{display:'flex', justifyContent:"space-between"}}>
       <IconButton aria-label="add to recomended" onClick={()=>handleRecom(movie)}>
         <StarIcon color={movie.isRecommended ? 'primary' : 'disabled'} 
         />
+      </IconButton>
+      <IconButton onClick={()=>{deleteMovie(movie.id)}}>
+        <CloseIcon color='error' />
       </IconButton>
     </CardActions>
   </Card>
