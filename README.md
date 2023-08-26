@@ -1,11 +1,11 @@
-Aplicación de Reseñas de Películas
+# Aplicación de Reseñas de Películas
 
 Esta es una aplicación web de Reseñas de Películas donde los usuarios pueden agregar y eliminar sus propias reseñas de películas. La aplicación está construida utilizando React, Vite, Formik, Material-UI y utiliza un servidor JSON ficticio como backend para almacenar y gestionar los datos de las reseñas de películas.
 
 Características:
--Agregar una nueva reseña de película, incluyendo título de la película, texto de la reseña y si se recomienda.
--Eliminar tus propias reseñas de películas.
--Ver una lista de reseñas de películas existentes con sus títulos, fragmentos de reseñas.
+- Agregar una nueva reseña de película, incluyendo título de la película, texto de la reseña y si se recomienda.
+- Eliminar tus propias reseñas de películas.
+- Ver una lista de reseñas de películas existentes con sus títulos, fragmentos de reseñas.
 
 -------------------------
 
